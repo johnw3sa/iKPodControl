@@ -1,0 +1,21 @@
+//
+//  KPodHIDDriver.iig
+//  KPodHIDDriver
+//
+//  Created by John Eigenbrode on 7/22/25.
+//
+
+#ifndef KPodHIDDriver_h
+#define KPodHIDDriver_h
+
+#include <Availability.h>
+#include <DriverKit/IOService.iig>
+
+class KPodHIDDriver: public IOService
+{
+public:
+    virtual kern_return_t
+    Start(IOService * provider) override;
+};
+
+#endif /* KPodHIDDriver_h */
