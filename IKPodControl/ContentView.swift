@@ -110,7 +110,7 @@ struct ContentView: View {
                 }
                 .tag(2)
         }
-        .frame(minWidth: 1500, minHeight: 600)
+        .frame(minWidth: 150, minHeight: 700)
     }
 }
 
@@ -200,7 +200,7 @@ struct MacroEditorView: View {
                         Text("Button \(i + 1)").tag(i)
                     }
                 }
-                .pickerStyle(SegmentedPickerStyle())
+                .pickerStyle(MenuPickerStyle())
                 
                 Picker("Action Type", selection: $selectedMacroType) {
                     Text("Tap").tag(0)
@@ -210,7 +210,7 @@ struct MacroEditorView: View {
                 
                 Spacer()
             }
-            .frame(minWidth: 200)
+            .frame(minWidth: 100)
             .padding()
             
             VStack {
